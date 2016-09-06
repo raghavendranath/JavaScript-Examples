@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>7. JavaScript Functions</title>
+   <script type= "text/javascript">
+     /* 
+     function myNewFunction()   {
+        alert("Howdy!"); 
+       }
+   myNewFunction(); //() are the function invocation operators
+      // function can be resued.
+   
+    function myNewFunction(myValue) {
+      alert("Howdy, " + myValue);
+    }
+ myNewFunction("pardner");
+ function add( firstNumber , secondNumber) {
+      return firstNumber + secondNumber;
+ }
+ var myResult = add( 3,4);
+ alert (myResult);
+
+function add() {
+   var tempValue = 0;
+   //when we create a function, it has a builtin object that we can reference. i.e. arguments objects. It will have every value passed as arguments in a given //function.
+for ( i =0 ; i< arguments.length; i++)
+  {
+     tempValue += arguments[i];
+  }
+return tempValue;
+}
+var myValue= add(1,2,3,4,5);
+alert(myValue);
+}
+
+
+// the variable addMe in the below is of type object. It is special type of object  of function object. So we can then use it in rest of the application as shown below.
+//Function literal :
+var addMe = function() {
+return arguments[0] + arguments[1];
+}
+
+var myNewValue = addMe(1,2);
+alert(myNewValue);
+*/
+
+/* var addMe = function bob() {
+return arguments[0] + arguments[1];
+}
+
+//var myNewValue = bob(1,2); //it doesn't work.
+alert(myNewValue); 
+
+//anonymous functions.
+var myResult =(function() {
+return arguments[0] + arguments[1];
+})(1,2);
+//In JQuery, anonymous functions are used all of the time.
+alert(myResult);
+
+*/
+alert((function() {
+return arguments[0] + arguments[1];
+})(5,2));
+   </script>
+</head>
+<body>
+  <h1>7. JavaScript Functions</h1>
+  <input type="submit" value = "Click Me!" onclick = "myNewFunction();"/>
+</body>
+</html>

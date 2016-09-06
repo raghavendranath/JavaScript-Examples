@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>10. Global Scope versus Function scope </title>
+  <script type="text/javascript">
+//variables defined without var datatype is global scope.
+/*
+ if (true) {
+var x =5;
+}
+ alert(x);
+*/
+
+myScope = "global" ;
+/*
+(function(){
+if(true)
+{
+var myScope = "function";
+}
+//myScope=" I set this inside the function";
+alert('inside the function, the scope is : '+myScope);
+})();
+
+alert('outside the function, the scope is: ' + myScope); //this doesn't execute if the variable is functional scope because we cannot concatinate undefined to string.
+*/
+
+alert('window.myScope: ' + window.myScope);
+
+  </script>
+</head>
+<body>
+  <h1>10. Global Scope versus Function scope</h1>
+</body>
+</html>
+
+
+//ALl variables that are defined at global scope belongs to the DOM window. Which is the top most object inside the DOM
+
